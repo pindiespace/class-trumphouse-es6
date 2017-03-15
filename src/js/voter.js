@@ -2,9 +2,13 @@ import User from './user';
 
 export default class Voter extends User {
 
-	constructor () {
+	constructor ( voterData ) {
 
-		super(); // call GameObject
+		super( voterData ); // calls User, which calls GameObject
+
+		// Change object to candidate brick size
+
+		this.dom.elem.className = 'voter';
 
 		console.log( 'in Voter constructor' );
 

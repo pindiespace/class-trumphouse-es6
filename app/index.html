@@ -42,7 +42,21 @@
    
     <!--scripts that can run later-->
     <script src="js/lib/jquery/jquery.min.js"></script>
+
+    <!--DYNAMIC LOADING added in Week 10 to make .getComputedStyle work! -->
     <script src="js/app.min.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            // Firing it here ensures that .getComputedStyle works...
+            // NOTE: had to remove the .init INSIDE 'trumphouse' object.
+
+            trumphouse.init();
+
+        }
+    </script>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -55,4 +69,5 @@
     </script>
 
   </body>
+
 </html>

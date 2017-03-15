@@ -400,6 +400,52 @@ textarea {
 .nav ul {
   list-style: none; }
 
+.main {
+  border: 4px solid green;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: #aaa; }
+
+.arena-primary-bkgnd {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  background-color: #eee; }
+
+.arena-whitehouse-bkgnd {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background-color: #eae;
+  width: 20%; }
+
+.voter, .trump, .candidate {
+  position: absolute; }
+
+.trump {
+  left: 10%;
+  top: 50%;
+  width: 80px;
+  height: 80px; }
+
+.voter {
+  left: 0%;
+  top: 50%;
+  width: 90px;
+  height: 90px; }
+
+.candidate {
+  left: 80%;
+  width: 75px;
+  height: 75px; }
+
+.candidate img,
+.trump img,
+.voter img {
+  width: 100%;
+  height: 100%; }
+
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");
@@ -427,6 +473,7 @@ textarea {
   color: #fff;
   text-shadow: none; }
 
+/* app-specific styles */
 @media print {
   * {
     background: transparent !important;
